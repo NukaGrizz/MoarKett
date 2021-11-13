@@ -46,13 +46,13 @@ function ProductItem(item) {
           alt={name}
           src={`/images/${image}`}
         />
-        <p>{name}</p>
+        <p className="p-item-link">{name}</p>
       </Link>
-      <div>
-        <div>{quantity} {pluralize("item", quantity)} in stock</div>
+      <div className="center-vertical">
+        <div className="padding-bottom">{quantity} {pluralize("item", quantity)} in stock</div>
         <span>${price}</span>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
+      <button className="button-add-to-cart" onClick={addToCart}>Add to cart</button>
     </div>
   );
 }

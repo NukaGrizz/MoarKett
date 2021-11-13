@@ -70,7 +70,7 @@ function Login(props) {
           </div>
           <div className="loginText postPad">
             <Link to="/signup" >
-            No a user? Click Here To Signup
+            Not a user? Click Here To Signup
             </Link>
           </div>
         </form>

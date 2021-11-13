@@ -28,44 +28,54 @@ function Login(props) {
   };
 
   return (
-    <div className="container my-1">
-      <Link to="/signup">
-        ← Go to Signup
-      </Link>
-
-      <h2>Login</h2>
-      <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email address:</label>
-          <input
-            placeholder="youremail@test.com"
-            name="email"
-            type="email"
-            id="email"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Password:</label>
-          <input
-            placeholder="******"
-            name="password"
-            type="password"
-            id="pwd"
-            onChange={handleChange}
-          />
-        </div>
-        {
-          error ? <div>
-            <p className="error-text" >The provided credentials are incorrect</p>
-          </div> : null
-        }
-        <div className="flex-row flex-end">
-          <button type="submit">
-            Submit
-          </button>
-        </div>
-      </form>
+    <div className="containerLogin">
+      <div className="loginCenter">
+        <form onSubmit={handleFormSubmit} className="loginForm">
+          <h2 className="loginText">Login</h2>
+          <div className="flex-row space-between my-2 centerButton">
+            <label htmlFor="email">Email address:</label>
+            <input 
+              className="loginInput"
+              placeholder="youremail@test.com"
+              name="email"
+              type="email"
+              id="email"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="flex-row space-between my-2 centerButton">
+            <label htmlFor="pwd">Password:</label>
+            <input
+              className="loginInput"
+              placeholder="******"
+              name="password"
+              type="password"
+              id="pwd"
+              onChange={handleChange}
+            />
+          </div>
+          {
+            error ? <div>
+              <p className="error-text" >The provided credentials are incorrect</p>
+            </div> : null
+          }
+          
+                  <div className="g-recaptcha centerButton" data-sitekey="6LfJATEdAAAAADBeMxNw9h8W3cCLftrp2yMMkfGl" data-callback="6LfJATEdAAAAAJBlpTFuCIkWIbC6PzviXj9UscfJ"></div>
+                  <div id="g-recaptcha-error" className="error-text">tes</div>
+          
+          <div className="flex-row centerButton postPad">
+            <button type="submitButton">
+              Submit
+            </button>
+          </div>
+          <div className="loginText postPad">
+            <Link to="/signup" >
+            No a user? Click Here To Signup
+            </Link>
+          </div>
+        </form>
+        
+      </div>
     </div>
   );
 }

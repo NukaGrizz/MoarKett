@@ -43,8 +43,7 @@ function Nav() {
 }
 
   return (
-    <header>
-    <div className="overlap-group1">
+    <header className="overlap-group1">
           
           <div className="get-moar-for-less valign-text-middle">
             Get Moar for Less
@@ -57,7 +56,7 @@ function Nav() {
           <nav>
             {showNavigation()}
           </nav>
-      </div>
+
     </header>
     // <header className="flex-row px-1">
     //   <h1 className="titlevalign-text-middleroboto-normal-white-40px">

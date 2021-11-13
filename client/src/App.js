@@ -42,6 +42,7 @@ function App() {
               <Route component={NoMatch} />
             </Switch>
           </StoreProvider>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
         </div>
       </Router>
     </ApolloProvider>

@@ -44,15 +44,6 @@ function Nav() {
 }
 
   return (
-<<<<<<< HEAD
-    <header className="flex-row px-1">
-      <h1>
-        <Link to="/">
-          <span role="img" aria-label="shopping bag">🛍️</span>
-            Moarkett
-        </Link>
-      </h1>
-=======
     <header className="overlap-group1">
           
           <div className="get-moar-for-less valign-text-middle">
@@ -66,7 +57,6 @@ function Nav() {
           <nav>
             {showNavigation()}
           </nav>
->>>>>>> fea43b24464d3a2e5b767bf02e1d95d43f84a117
 
     </header>
     // <header className="flex-row px-1">

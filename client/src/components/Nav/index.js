@@ -1,6 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 function Nav() {
 
@@ -23,35 +24,54 @@ function Nav() {
       );
     } else {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
+        <div className="component-1">
+          <div className="component-1-item valign-text-middle">
             <Link to="/signup">
               Signup
             </Link>
-          </li>
-          <li className="mx-1">
+          </div>
+          <div className="component-1-item valign-text-middle">
             <Link to="/login">
               Login
             </Link>
-          </li>
-        </ul>
-      );
-    }
-  }
+          </div>
+          <div className="component-1-item valign-text-middle"></div>
+        </div>
+    
+  );
+}
+}
 
   return (
-    <header className="flex-row px-1">
-      <h1>
-        <Link to="/">
-          <span role="img" aria-label="shopping bag">🛍️</span>
-          -Shop-Shop
-        </Link>
-      </h1>
-
-      <nav>
-        {showNavigation()}
-      </nav>
+    <header>
+    <div className="overlap-group1">
+          
+          <div className="get-moar-for-less valign-text-middle">
+            Get Moar for Less
+          </div>
+          <div className="moarkett valign-text-middle">
+            <Link to="/">
+              MoarKett
+            </Link>
+          </div>
+          <nav>
+            {showNavigation()}
+          </nav>
+      </div>
     </header>
+    // <header className="flex-row px-1">
+    //   <h1 className="titlevalign-text-middleroboto-normal-white-40px">
+    //     <Link to="/">
+    //       MoarKett
+    //     </Link>
+    //   </h1>
+    //   <div className="get-moar-for-lessvalign-text-middleroboto-normal-white-14px">
+    //   Get Moar for Less</div>
+    
+
+    //   <nav>
+    //     {showNavigation()}
+    //   </nav>
   );
 }
 

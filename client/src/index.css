@@ -7,6 +7,23 @@
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
+
+    --black-2:rgba(0, 0, 0, 0.478);
+    --black-3:rgba(0, 0, 0, 0.769);
+    --black:rgba(0, 0, 0, 1);
+    --cerulean-2:rgba(2, 144, 224, 0.62);
+    --cerulean:rgba(2, 144, 224, 1);
+    --mist-gray-2:rgba(196, 196, 196, 0.212);
+    --mist-gray:rgba(196, 196, 196, 1);
+    --white:rgba(255, 255, 255, 1);
+  
+    --font-size-xs: 14px;
+    --font-size-s: 16px;
+    --font-size-m: 18px;
+    --font-size-l: 20px;
+    --font-size-xl: 24px;
+    --font-size-xxl: 40px;
+    --font-size-xxxl: 48px;
 }
 
 * {

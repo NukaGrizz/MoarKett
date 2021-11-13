@@ -4,7 +4,7 @@
   --tertiary: #B12704;
   --light: #fafafa;
   --dark: #272f32;
-  --error: rgb(228, 46, 1);
+  --error: rgb(255, 189, 173);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
 
@@ -87,13 +87,14 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  color: var(--white);
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
+  color: var(--mist-gray);
 }
 
 header {
@@ -113,11 +114,13 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  color: var(--white);
+  background-color: var(--cerulean);
 }
 
 button:hover {
-  opacity: .8;
+  color: var(--cerulean);
+  background-color: var(--white);
 }
 
 button[disabled] {

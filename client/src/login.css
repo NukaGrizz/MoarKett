@@ -1,0 +1,52 @@
+.containerLogin {
+    width: 100vw;
+    height: calc(100vh - 86px);
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/images/south-station-4927286_1920.jpg");
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginCenter {
+    min-width: 360px;
+    min-height: 583px;
+    max-width: 1200px;
+    background-color: var(--cerulean-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+  }
+
+  .loginForm {
+      width: 90%;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .loginInput {
+      width: 90%;
+  }
+
+  .centerButton {
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+  }
+  
+  .loginText {
+    text-align: center;
+  }
+
+  .loginTextSmall {
+      text-align: left;
+  }
+
+  .postPad {
+    padding: 12px 0;
+  }
+

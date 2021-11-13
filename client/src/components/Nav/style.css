@@ -1,0 +1,54 @@
+
+  .overlap-group1 {
+    height: 86px;
+    position: relative;
+  }
+  
+  .get-moar-for-less {
+    color: white;
+    height: 19px;
+    left: 24px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 60px;
+    width: 175px;
+  }
+  
+  .moarkett {
+    height: 47px;
+    left: 0;
+    letter-spacing: 0;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    width: 205px;
+    font-size: 40px;
+  }
+  
+  .overlap-group {
+    height: 938px;
+    margin-left: -1px;
+    position: relative;
+  }
+
+  .component-1 {
+    align-items: flex-end;
+    background-color: var(--cerulean);
+    display: flex;
+    height: 86px;
+    justify-content: flex-end;
+    padding: 23px 11px;
+  }
+  
+  .component-1-item {
+    height: 39px;
+    letter-spacing: 0;
+    text-align: center;
+    width: 75px;
+  }
+
+  .valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }

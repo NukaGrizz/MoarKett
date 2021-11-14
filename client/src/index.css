@@ -1,7 +1,7 @@
 :root {
-  --primary: #232F3E;
+  --primary: #0390E0;
   --secondary: #F3A847;
-  --tertiary: #B12704;
+  --tertiary: #a9a3a3;
   --light: #fafafa;
   --dark: #272f32;
   --error: rgb(255, 189, 173);
@@ -128,8 +128,17 @@ button[disabled] {
   opacity: .8;
 }
 
+.button-category-menu {
+  background-color: var(--tertiary);
+}
+
 img {
   max-width: 100%;
+  height: auto;
+}
+
+.img-display-list {
+  max-width: 75%;
 }
 
 span[role="img"] {
@@ -155,10 +164,19 @@ input:focus {
 }
 
 .container {
-  width: 85%;
+  width: 100%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.container-category-menu {
+ background: var(--tertiary);
+  margin-top: 40px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-basis: auto;
 }
 
 .flex-row {
@@ -214,9 +232,17 @@ input:focus {
   padding-bottom: var(--spacing-two);
 }
 
+.display-block {
+  display: block;
+}
+
 .card {
-  width: 25%;
+  width: 75%;
   text-align: center;
+}
+
+.card-flex {
+  display: flex;
 }
 
 .error-text {

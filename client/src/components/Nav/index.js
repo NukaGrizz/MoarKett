@@ -59,19 +59,6 @@ function Nav() {
           </nav>
 
     </header>
-    // <header className="flex-row px-1">
-    //   <h1 className="titlevalign-text-middleroboto-normal-white-40px">
-    //     <Link to="/">
-    //       MoarKett
-    //     </Link>
-    //   </h1>
-    //   <div className="get-moar-for-lessvalign-text-middleroboto-normal-white-14px">
-    //   Get Moar for Less</div>
-    
-
-    //   <nav>
-    //     {showNavigation()}
-    //   </nav>
   );
 }
 

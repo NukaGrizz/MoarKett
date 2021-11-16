@@ -86,6 +86,12 @@ p {
   margin-top: 0;
 }
 
+.p-item-link {
+  color: var(--cerulean);
+  text-decoration: none;
+  font-weight: bold;
+}
+
 a {
   color: var(--white);
   text-decoration: none;
@@ -130,6 +136,11 @@ button[disabled] {
 
 .button-category-menu {
   background-color: var(--tertiary);
+}
+
+.button-add-to-cart {
+  height: 70px;
+  margin-top: 50px;
 }
 
 img {
@@ -247,6 +258,14 @@ input:focus {
 
 .error-text {
   color: var(--error);
+}
+
+.center-vertical {
+  padding: 50px 5px;
+}
+
+.padding-bottom{
+  padding: 0 5px 20px 0;
 }
 
 @media screen and (max-width: 768px) {

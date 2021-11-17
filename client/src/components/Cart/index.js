@@ -11,13 +11,7 @@ import "./style.css";
 
 const stripeKey = process.env.REACT_APP_STRIPE_KEY;
 
-// const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
-
-console.log("this is the key " + stripeKey)
-
 const stripePromise = loadStripe(stripeKey);
-
-console.log(stripePromise)
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();

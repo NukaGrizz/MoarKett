@@ -15,7 +15,7 @@ const stripeKey = process.env.STRIPE
 
 console.log("this is the key " + stripeKey)
 
-const stripePromise = loadStripe(toString(stripeKey));
+const stripePromise = loadStripe({stripeKey});
 
 console.log(stripePromise)
 

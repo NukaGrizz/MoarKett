@@ -9,12 +9,13 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import "./style.css";
 
-// const stripeKey = process.env.STRIPE_URI
+const stripeKey = process.env.STRIPE
 
 // const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
-const stripePromise = loadStripe(process.env.STRIPE_URI);
+const stripePromise = loadStripe(stripeKey);
 
+console.log(stripeKey)
 console.log(stripePromise)
 
 const Cart = () => {
@@ -23,7 +24,7 @@ const Cart = () => {
 
   useEffect(() => {
     if (data) {
-      console.log(process.env.STRIPE_URI)
+      console.log(stripeKey)
       stripePromise.then((res) => {
         res.redirectToCheckout({ sessionId: data.checkout.session })
       })

@@ -11,7 +11,11 @@ import "./style.css";
 
 // const stripeKey = process.env.STRIPE_URI
 
+// const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+
 const stripePromise = loadStripe(process.env.STRIPE_URI);
+
+console.log(stripePromise)
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();

@@ -9,9 +9,9 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import "./style.css";
 
-const stripeKey = process.env.STRIPE_URI
+// const stripeKey = process.env.STRIPE_URI
 
-const stripePromise = loadStripe(stripeKey);
+const stripePromise = loadStripe(process.env.STRIPE_URI);
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();

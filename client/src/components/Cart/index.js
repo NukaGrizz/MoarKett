@@ -23,6 +23,7 @@ const Cart = () => {
 
   useEffect(() => {
     if (data) {
+      console.log(process.env.STRIPE_URI)
       stripePromise.then((res) => {
         res.redirectToCheckout({ sessionId: data.checkout.session })
       })

@@ -13,9 +13,10 @@ const stripeKey = process.env.STRIPE
 
 // const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
-const stripePromise = loadStripe(stripeKey);
+console.log("this is the key " + stripeKey)
 
-console.log(stripeKey)
+const stripePromise = loadStripe(toString(stripeKey));
+
 console.log(stripePromise)
 
 const Cart = () => {

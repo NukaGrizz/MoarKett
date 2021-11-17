@@ -27,9 +27,6 @@ function Nav() {
       return (
         <div className="component-1">
           <div className="component-1-item valign-text-middle">
-            <Link to="/signup">
-              Signup
-            </Link>
           </div>
           <div className="component-1-item valign-text-middle">
             <Link to="/login">

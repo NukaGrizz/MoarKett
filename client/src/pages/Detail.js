@@ -91,30 +91,32 @@ function Detail() {
           </Link>
 
           <h2>{currentProduct.name}</h2>
-
-          <p>
-            {currentProduct.description}
-          </p>
-
+          
           <p>
             <strong>Price:</strong>
             ${currentProduct.price}
             {" "}
-            <button onClick={addToCart}>
-              Add to Cart
-            </button>
-            <button 
-              disabled={!cart.find(p => p._id === currentProduct._id)} 
-              onClick={removeFromCart}
-            >
-              Remove from Cart
-            </button>
-          </p>
 
-          <img
-            src={`/images/${currentProduct.image}`}
-            alt={currentProduct.name}
-          />
+          </p>
+          <div className="product-container">
+            <div className="description">
+              <img
+                src={`/images/${currentProduct.image}`}
+                alt={currentProduct.name}
+              />
+              <p className="product-child">
+                <h1>Product Descrition:</h1>
+                {currentProduct.description}
+              </p>
+          </div>
+            <div className="">
+              <button className="buybtn cart-descrip-button" onClick={addToCart}>
+                  Add to Cart
+              </button>
+            </div>
+          </div>
+
+
         </div>
       ) : null}
       {

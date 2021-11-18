@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useMutation } from '@apollo/react-hooks';
 import Auth from "../utils/auth";
 import { ADD_USER } from "../utils/mutations";
+import ReCAPTCHA from 'react-google-recaptcha';
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -27,6 +28,10 @@ function Signup(props) {
       [name]: value
     });
   };
+
+  function onChange(value) {
+    console.log('Captcha value:', value);
+  }
 
   return (
     <div className="containerLogin">
@@ -82,9 +87,14 @@ function Signup(props) {
             />
           </div>
 
-            <div className="g-recaptcha centerButton postPad" data-sitekey="6LdIWDwdAAAAABAIqNzg1tbJoRMzsPOR7wJfOCFg" data-callback="6LdIWDwdAAAAAOi-vJUnBGubDtIoVKHt50mMorTn"></div>
-            <div id="g-recaptcha-error" className="error-text"></div>
-
+          <div className="g-recaptcha centerButton postPad">
+            <ReCAPTCHA
+              sitekey="6LdIWDwdAAAAABAIqNzg1tbJoRMzsPOR7wJfOCFg"
+              onChange={onChange}data-callback="6LdIWDwdAAAAAOi-vJUnBGubDtIoVKHt50mMorTn"
+            />
+          </div>
+          <div id="g-recaptcha-error" className="error-text"></div>
+          
           <div className="flex-row centerButton postPad">
             <button type="submit" className="loginSubmitButton">
               Submit
@@ -92,7 +102,7 @@ function Signup(props) {
           </div>
           <div className="loginText postPad">
             <Link to="/login">
-              Already a User? Click Here to Login
+            <p className="loginLink">Already a User? Click Here to Login</p>
             </Link>
           </div>
         </form>

@@ -1,7 +1,7 @@
 .containerLogin {
     width: 100vw;
-    height: 100%;
-    min-height: 600px;
+    min-height: 700px;
+    height:100vh;
     margin-left: auto;
     margin-right: auto;
     background-image: url("/images/south-station-4927286_1920.jpg");
@@ -55,5 +55,15 @@
 
   .loginSubmitButton{
       width: 50%;
+  }
+
+  .loginLink {
+    text-align: center;
+    color: var(--white);
+  }
+
+  .loginLink:hover {
+    text-decoration: underline;
+    color: var(--mist-gray);
   }
 

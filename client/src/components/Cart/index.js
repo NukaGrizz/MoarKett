@@ -9,6 +9,7 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import "./style.css";
 
+//stored key in env var
 const stripeKey = process.env.REACT_APP_STRIPE_KEY;
 
 const stripePromise = loadStripe(stripeKey);

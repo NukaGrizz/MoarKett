@@ -31,7 +31,11 @@ function Login(props) {
     <div className="containerLogin">
       <div className="loginCenter">
         <form onSubmit={handleFormSubmit} className="loginForm">
-          <h2 className="loginText">Login</h2>
+          <h2 className="loginText">MoarKett</h2>
+          <p className="loginText">
+            Get Moar for Less
+          </p>
+          <h3 className="loginText">Login</h3>
           <div className="flex-row space-between my-2 centerButton postPad">
             <label htmlFor="email">Email address:</label>
             <input 

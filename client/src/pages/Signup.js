@@ -32,7 +32,11 @@ function Signup(props) {
     <div className="containerLogin">
       <div className="loginCenter">
         <form onSubmit={handleFormSubmit} className="loginForm">
-          <h2 className="loginText">Signup</h2>
+          <h2 className="loginText">MoarKett</h2>
+          <p className="loginText">
+            Get Moar for Less
+          </p>
+          <h3 className="loginText">Signup</h3>
           <div className="flex-row space-between my-2 centerButton postPad">
             <label htmlFor="firstName">First Name:</label>
             <input

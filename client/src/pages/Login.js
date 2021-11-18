@@ -3,6 +3,7 @@ import { useMutation } from '@apollo/react-hooks';
 import { Link } from "react-router-dom";
 import { LOGIN } from "../utils/mutations"
 import Auth from "../utils/auth";
+import ReCAPTCHA from 'react-google-recaptcha';
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: '', password: '' })
@@ -27,11 +28,19 @@ function Login(props) {
     });
   };
 
+  function onChange(value) {
+    console.log('Captcha value:', value);
+  }
+
   return (
     <div className="containerLogin">
       <div className="loginCenter">
         <form onSubmit={handleFormSubmit} className="loginForm">
-          <h2 className="loginText">Login</h2>
+          <h2 className="loginText">MoarKett</h2>
+          <p className="loginText">
+            Get Moar for Less
+          </p>
+          <h3 className="loginText">Login</h3>
           <div className="flex-row space-between my-2 centerButton postPad">
             <label htmlFor="email">Email address:</label>
             <input 
@@ -60,8 +69,13 @@ function Login(props) {
             </div> : null
           }
           
-                  <div className="g-recaptcha centerButton postPad" data-sitekey="6LdIWDwdAAAAABAIqNzg1tbJoRMzsPOR7wJfOCFg" data-callback="6LdIWDwdAAAAAOi-vJUnBGubDtIoVKHt50mMorTn"></div>
-                  <div id="g-recaptcha-error" className="error-text"></div>
+          <div className="g-recaptcha centerButton postPad">
+            <ReCAPTCHA
+              sitekey="6LdIWDwdAAAAABAIqNzg1tbJoRMzsPOR7wJfOCFg"
+              onChange={onChange}data-callback="6LdIWDwdAAAAAOi-vJUnBGubDtIoVKHt50mMorTn"
+            />
+          </div>
+          <div id="g-recaptcha-error" className="error-text"></div>
           
           <div className="flex-row centerButton postPad">
             <button type="submitButton" className="loginSubmitButton">
@@ -70,7 +84,7 @@ function Login(props) {
           </div>
           <div className="loginText postPad">
             <Link to="/signup" >
-            Not a user? Click Here To Signup
+            <p className="loginLink">Not a user? Click Here To Signup</p>
             </Link>
           </div>
         </form>

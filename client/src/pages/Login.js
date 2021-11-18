@@ -31,7 +31,11 @@ function Login(props) {
     <div className="containerLogin">
       <div className="loginCenter">
         <form onSubmit={handleFormSubmit} className="loginForm">
-          <h2 className="loginText">Login</h2>
+          <h2 className="loginText">MoarKett</h2>
+          <p className="loginText">
+            Get Moar for Less
+          </p>
+          <h3 className="loginText">Login</h3>
           <div className="flex-row space-between my-2 centerButton postPad">
             <label htmlFor="email">Email address:</label>
             <input 
@@ -60,7 +64,7 @@ function Login(props) {
             </div> : null
           }
           
-                  <div className="g-recaptcha centerButton postPad" data-sitekey="6LfJATEdAAAAADBeMxNw9h8W3cCLftrp2yMMkfGl" data-callback="6LfJATEdAAAAAJBlpTFuCIkWIbC6PzviXj9UscfJ"></div>
+                  <div className="g-recaptcha centerButton postPad" data-sitekey="6LdIWDwdAAAAABAIqNzg1tbJoRMzsPOR7wJfOCFg" data-callback="6LdIWDwdAAAAAOi-vJUnBGubDtIoVKHt50mMorTn"></div>
                   <div id="g-recaptcha-error" className="error-text"></div>
           
           <div className="flex-row centerButton postPad">

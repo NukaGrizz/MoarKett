@@ -45,6 +45,7 @@ body {
   color: var(--dark);
 }
 
+
 h1,
 h2,
 h3,
@@ -86,8 +87,15 @@ p {
   margin-top: 0;
 }
 
+.p-item-link {
+  color: var(--cerulean);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
 a {
-  color: var(--white);
+  color: var(--black);
   text-decoration: none;
   font-weight: bold;
 }
@@ -121,6 +129,7 @@ button {
 button:hover {
   color: var(--cerulean);
   background-color: var(--white);
+  border: 1px solid var(--cerulean);
 }
 
 button[disabled] {
@@ -130,6 +139,27 @@ button[disabled] {
 
 .button-category-menu {
   background-color: var(--tertiary);
+}
+
+.button-add-to-cart {
+  height: 70px;
+  margin-top: 50px;
+}
+
+.description {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-child {
+  padding-left: 1rem;
+}
+
+.cart-descrip-button {
+  width:100%;
+  height: 5rem;
+  margin-top: 2rem;
 }
 
 img {
@@ -249,8 +279,37 @@ input:focus {
   color: var(--error);
 }
 
+.center-vertical {
+  padding: 50px 5px;
+}
+
+.padding-bottom{
+  padding: 0 5px 20px 0;
+}
+
+@media (max-width: 400px) {
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+}
+
+
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

@@ -19,8 +19,8 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Screwdriver Set',
-      description: 'bit and screwdriver set ready for all your needs!',
+      name: 'Screwdriver set',
+      description: 'bit ONE screwdriver set ready for all your needs!',
       image: '0_1_screwdriver-set.jpeg',
       category: categories[0]._id,
       price: 10.99,
